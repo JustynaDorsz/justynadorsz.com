@@ -23,3 +23,16 @@ main.page a:hover { text-decoration-color: #fff; }
 main.page img { display: block; width: 100%; height: auto; margin: 0 0 28px; }
 footer { text-align: center; color: #555; font-size: 12px; padding: 48px 16px; letter-spacing: 0.1em; }
 @media (max-width: 480px) { main.grid { grid-template-columns: repeat(2, 1fr); } header h1 { font-size: 15px; letter-spacing: 0.26em; } nav { letter-spacing: 0.14em; } nav a { margin-left: 16px; } }
+main.page h2.title { font-size: 26px; font-weight: 300; letter-spacing: 0.02em; text-transform: none; color: #fff; margin: 8px 0 6px; line-height: 1.25; }
+main.page h3 { font-size: 21px; font-weight: 400; color: #fff; margin: 0 0 2px; line-height: 1.3; }
+main.page .date { font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #777; margin: 0 0 20px; }
+main.page article { padding: 40px 0 8px; border-top: 1px solid #222; margin-top: 32px; scroll-margin-top: 12px; }
+main.page figure { margin: 0 0 24px; }
+main.page figure img { margin: 0; }
+main.page figcaption { font-size: 14px; color: #888; margin-top: 8px; text-align: center; }
+main.page ul, main.page ol { margin: 0 0 16px; padding-left: 22px; }
+main.page li { margin-bottom: 8px; }
+main.page ul.links { list-style: none; padding: 0; }
+main.page ul.links span { color: #888; font-size: 15px; margin-left: 6px; }
+main.page.design figure img { background: #fff; }
+main.page strong { font-weight: 400; color: #fff; }
