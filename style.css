@@ -75,3 +75,4 @@ main.page.book article, main.page.book section { scroll-margin-top: 16px; }
   nav.side ul { display: none; }
   nav.side ol > li { margin-bottom: 4px; }
 }
+main.page.top10 h3 { margin: 44px 0 14px; }
