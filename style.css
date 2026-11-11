@@ -37,8 +37,9 @@ main.page ul.links span { color: #888; font-size: 15px; margin-left: 6px; }
 main.page.design figure img { background: #fff; }
 main.page strong { font-weight: 400; color: #fff; }
 footer { text-align: left; padding: 64px 24px 40px; margin-top: 56px; border-top: 1px solid #1c1c1c; letter-spacing: 0; }
-footer .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 32px 24px; max-width: 980px; margin: 0 auto; }
+footer .cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px 24px; max-width: 980px; margin: 0 auto; }
 footer h2 { font-size: 12px; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: #777; margin: 0 0 12px; }
 footer a { display: block; color: #bbb; text-decoration: none; font-size: 15px; line-height: 1.3; margin-bottom: 9px; }
 footer a:hover { color: #fff; }
 footer p { max-width: 980px; margin: 44px auto 0; color: #555; font-size: 12px; letter-spacing: 0.1em; }
+@media (max-width: 700px) { footer .cols { grid-template-columns: repeat(2, 1fr); } }
