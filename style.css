@@ -43,3 +43,16 @@ footer a { display: block; color: #bbb; text-decoration: none; font-size: 15px; 
 footer a:hover { color: #fff; }
 footer p { max-width: 980px; margin: 44px auto 0; color: #555; font-size: 12px; letter-spacing: 0.1em; }
 @media (max-width: 700px) { footer .cols { grid-template-columns: repeat(2, 1fr); } }
+main.page .lead { font-size: 20px; color: #bbb; margin: 0 0 28px; }
+main.page ol.toc { list-style: none; padding: 0; margin: 0 0 8px; counter-reset: part; border-top: 1px solid #222; }
+main.page ol.toc li { counter-increment: part; margin: 0; border-bottom: 1px solid #222; }
+main.page ol.toc a { display: block; padding: 11px 0; text-decoration: none; color: #ddd; }
+main.page ol.toc a::before { content: counter(part, decimal-leading-zero); color: #666; font-size: 13px; letter-spacing: 0.12em; margin-right: 16px; }
+main.page ol.toc a:hover { color: #fff; }
+main.page h2.part { font-size: 30px; font-weight: 300; letter-spacing: 0; text-transform: none; color: #fff; margin: 88px 0 0; line-height: 1.2; scroll-margin-top: 12px; }
+main.page h2.part span { display: block; font-size: 12px; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: #777; margin-bottom: 10px; }
+main.page.book section > article:first-of-type { margin-top: 28px; }
+main.page h4 { font-size: 13px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: #999; margin: 28px 0 10px; }
+main.page blockquote { margin: 0 0 16px; padding: 2px 0 2px 18px; border-left: 2px solid #444; color: #bbb; }
+main.page blockquote cite { display: block; font-style: normal; font-size: 15px; color: #888; margin-top: 4px; }
+main.page.book figure img { background: #fff; }
