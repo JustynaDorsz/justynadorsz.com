@@ -57,3 +57,21 @@ main.page blockquote { margin: 0 0 16px; padding: 2px 0 2px 18px; border-left: 2
 main.page blockquote cite { display: block; font-style: normal; font-size: 15px; color: #888; margin-top: 4px; }
 main.page.book figure img { background: #fff; }
 main.page.book h3 { margin-bottom: 16px; }
+.book-wrap { display: grid; grid-template-columns: 250px minmax(0, 640px); gap: 0 56px; justify-content: center; padding: 0 24px; }
+.book-wrap main.page { margin: 0; padding: 24px 0 0; max-width: none; }
+nav.side { position: sticky; top: 0; align-self: start; max-height: 100vh; overflow-y: auto; padding: 32px 0 32px; font-size: 14px; letter-spacing: 0; text-transform: none; }
+nav.side p { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #777; margin: 0 0 14px; }
+nav.side ol, nav.side ul { list-style: none; margin: 0; padding: 0; }
+nav.side ol > li { margin-bottom: 14px; }
+nav.side a { display: block; margin: 0; padding: 4px 0; color: #ddd; text-decoration: none; line-height: 1.35; }
+nav.side ul a { color: #888; padding: 3px 0 3px 12px; border-left: 1px solid #262626; font-size: 13.5px; }
+nav.side a:hover { color: #fff; }
+nav.side a[aria-current] { color: #fff; border-left-color: #fff; }
+main.page.book h2.part:first-of-type { margin-top: 56px; }
+main.page.book article, main.page.book section { scroll-margin-top: 16px; }
+@media (max-width: 900px) {
+  .book-wrap { display: block; max-width: 640px; margin: 0 auto; }
+  nav.side { position: static; max-height: none; padding: 20px 0 8px; border-bottom: 1px solid #222; }
+  nav.side ul { display: none; }
+  nav.side ol > li { margin-bottom: 4px; }
+}
