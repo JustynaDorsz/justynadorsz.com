@@ -81,3 +81,5 @@ main.page ol.points li { counter-increment: pt; position: relative; padding: 14p
 main.page ol.points li::before { content: counter(pt, decimal-leading-zero); position: absolute; left: 0; top: 17px; font-size: 13px; letter-spacing: 0.12em; color: #666; }
 main.page .template { border-left: 2px solid #444; padding: 4px 0 4px 20px; margin: 8px 0 24px; color: #ccc; }
 main.page .template p { margin-bottom: 12px; }
+main.page.game figure img { background: #111; }
+main.page .steam { margin-top: 32px; padding-top: 20px; border-top: 1px solid #222; }
