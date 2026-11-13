@@ -37,11 +37,11 @@ main.page ul.links span { color: #888; font-size: 15px; margin-left: 6px; }
 main.page.design figure img { background: #fff; }
 main.page strong { font-weight: 400; color: #fff; }
 footer { text-align: left; padding: 64px 24px 40px; margin-top: 56px; border-top: 1px solid #1c1c1c; letter-spacing: 0; }
-footer .cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px 24px; max-width: 980px; margin: 0 auto; }
+footer .cols { display: grid; grid-template-columns: repeat(5, 1fr); gap: 32px 24px; max-width: 1120px; margin: 0 auto; }
 footer h2 { font-size: 12px; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: #777; margin: 0 0 12px; }
 footer a { display: block; color: #bbb; text-decoration: none; font-size: 15px; line-height: 1.3; margin-bottom: 9px; }
 footer a:hover { color: #fff; }
-footer p { max-width: 980px; margin: 44px auto 0; color: #555; font-size: 12px; letter-spacing: 0.1em; }
+footer p { max-width: 1120px; margin: 44px auto 0; color: #555; font-size: 12px; letter-spacing: 0.1em; }
 @media (max-width: 700px) { footer .cols { grid-template-columns: repeat(2, 1fr); } }
 main.page .lead { font-size: 20px; color: #bbb; margin: 0 0 28px; }
 main.page ol.toc { list-style: none; padding: 0; margin: 0 0 8px; counter-reset: part; border-top: 1px solid #222; }
@@ -76,3 +76,8 @@ main.page.book article, main.page.book section { scroll-margin-top: 16px; }
   nav.side ol > li { margin-bottom: 4px; }
 }
 main.page.top10 h3 { margin: 44px 0 14px; }
+main.page ol.points { padding-left: 0; list-style: none; counter-reset: pt; margin: 8px 0 28px; }
+main.page ol.points li { counter-increment: pt; position: relative; padding: 14px 0 14px 48px; margin: 0; border-top: 1px solid #222; }
+main.page ol.points li::before { content: counter(pt, decimal-leading-zero); position: absolute; left: 0; top: 17px; font-size: 13px; letter-spacing: 0.12em; color: #666; }
+main.page .template { border-left: 2px solid #444; padding: 4px 0 4px 20px; margin: 8px 0 24px; color: #ccc; }
+main.page .template p { margin-bottom: 12px; }
