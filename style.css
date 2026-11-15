@@ -7,8 +7,8 @@ body { margin: 0; background: #000; color: #fff; font-family: "Jost", system-ui,
 header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px 24px; padding: 24px 24px 22px; }
 header h1 { margin: 0; font-size: 17px; font-weight: 300; letter-spacing: 0.32em; text-transform: uppercase; }
 header h1 a { color: #e6e6e6; text-decoration: none; }
-nav { font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; }
-nav a { color: #8a8a8a; text-decoration: none; margin-left: 24px; }
+nav { font-size: 15px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; }
+nav a { color: #d0d0d0; text-decoration: none; margin-left: 28px; }
 nav a:first-child { margin-left: 0; }
 nav a:hover, nav a[aria-current] { color: #fff; }
 main.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px; padding: 0 6px; }
